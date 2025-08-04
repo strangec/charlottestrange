@@ -1,87 +1,113 @@
 <!doctype html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<html>
-    <head>
-            <style type= "text/css">
-
-                <!--
- .tab {margin-left: 200px;}
-
- #invisible{
-  visibility:hidden;
-}
-mark {
-  background-color: rgb(255, 4, 213);
-  color: white;
-}
-
- a:hover{
-    font-size:150%;
-     font-color:white;}
-body{
-  font-family: "Helvetica", sans-serif;
-  font-weight:bold;
-  color:black;
-  background-size: 30%;
-  background-repeat:no-repeat;
- <!-- text-transform:capitalize; --> 
-}
-#visible{
-  visibility:visible;
-}
-
-#invisible:hover{
-  visibility:visible;
-}
-.matter{
-  position: relative;
-  text-align: left;
-  margin: auto;
-  margin-top: 120px;
-  margin-left: 200px;
-  padding-bottom:50px;
-}
-
-.o{
-  position:relative;
-  margin-top: 40px;
-  margin-left: 900px;
-}
-
-.ooo{
-  position: relative;
-  margin-left: 300px;
-}
-
-#link{
-    color:blue;
-    mark;
-}
-
-#shirt{
-    padding-top: 20px;
-    padding-left: 30px;
-    height:50%;
-    position:absolute;
-}
--->
-</style>
+<html lang="en">
 <head>
-<title>c h a r l o t t e s t r a n g e</title>
-<link rel="shortcut icon" href="img/favicon1.png"></link>
-<meta charset="UTF-8"/></head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>c h a r l o t t e s t r a n g e</title>
+  <link rel="shortcut icon" href="img/favicon1.png" />
+  <style>
+    body {
+      font-family: "Helvetica", sans-serif;
+      font-weight: bold;
+      color: black;
+      background-size: 30%;
+      background-repeat: no-repeat;
+      text-transform: capitalize; 
+      margin: 0;
+      padding: 0 1rem;
+    }
+
+    mark {
+      background-color: rgb(255, 4, 213);
+      color: white;
+    }
+
+    a:hover {
+      font-size: 150%;
+      color: white; 
+      transition: font-size 0.3s ease;
+    }
+
+    #shirt {
+      padding-top: 20px;
+      padding-left: 30px;
+      max-width: 100%;
+      height: auto;
+      position: relative; /* changed from absolute to relative for better flow */
+      display: block;
+      margin: 0 auto 20px auto; /* center on small screens */
+    }
+
+    .matter {
+      text-align: left;
+      max-width: 600px;
+      margin: 120px auto 50px auto; /* center with top margin */
+      padding-bottom: 50px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .o, .ooo {
+      max-width: 600px;
+      margin: 40px auto;
+      text-align: center;
+    }
+
+    /* Invisible by default but visible on hover */
+    #invisible {
+      visibility: hidden;
+    }
+
+    #invisible:hover {
+      visibility: visible;
+    }
+
+    /* Remove fixed large margins */
+    .tab {
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    #link {
+      color: blue;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .matter {
+        margin-top: 60px;
+        padding-bottom: 30px;
+      }
+
+      .o, .ooo {
+        margin: 20px auto;
+        font-size: 90%;
+      }
+    }
+  </style>
+</head>
 <body>
-    <img id="shirt" src="img/wanted.png">
-  <br><br><br><br><br><br><br>
-  <div class="o"><mark>*****</mark><br><br><br><br><br><p class="tab">
- <i><mark>*****<i></mark></p></</mark></div>
-  <div id="invisible"><mark>
+  <img id="shirt" src="img/wanted.png" alt="wanted shirt" />
+  
+  <div class="o">
+    <mark>*****</mark>
+    <br /><br /><br /><br />
+    <p class="tab">
+      <i><mark>*****</mark></i>
+    </p>
+  </div>
+
+  <div id="invisible">
     <div class="matter">
-    <mark><a id="link" href = "main.html"><span id="visible">*</span>there is a clear stream bubbling thru my heart</mark></a>
-
-
-
+      <mark>
+        <a id="link" href="main.html"><span id="visible">*</span>there is a clear stream bubbling thru my heart</a>
+      </mark>
+    </div>
   </div>
+
+  <div class="ooo">
+    <br /><br /><br /><br /><br />
+    <i><mark>*****</mark></i>
   </div>
-    <div class="ooo"><br><br><br><br><br><i><mark>*****</i></div></mark>
 </body>
+</html>
